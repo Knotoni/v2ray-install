@@ -1,4 +1,5 @@
 #!/bin/bash
+apt install sudo
 sudo apt update && sudo apt upgrade -y
 sudo apt install shadowsocks-libev && sudo apt install haveged
 sudo wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-linux-amd64-v1.3.1.tar.gz
