@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install shadowsocks-libev && sudo apt install haveged
-sudo wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.0/v2ray-plugin-linux-amd64-v1.3.0.tar.gz
-sudo tar -xf v2ray-plugin-linux-amd64-v1.3.0.tar.gz
+sudo wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-linux-amd64-v1.3.1.tar.gz
+sudo tar -xf v2ray-plugin-linux-amd64-v1.3.1.tar.gz
 sudo mv v2ray-plugin_linux_amd64 /etc/shadowsocks-libev/v2ray-plugin
 sudo setcap 'cap_net_bind_service=+eip' /etc/shadowsocks-libev/v2ray-plugin
 sudo setcap 'cap_net_bind_service=+ep' /usr/bin/ss-server
